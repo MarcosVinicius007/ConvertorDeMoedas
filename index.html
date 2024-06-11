@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Convert Money</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Convert Money</h1>
+      </header>
+      <main>
+        <label>
+          <p>Convert <b>from</b></p>
+          <select>
+            <option>R$ Brazillian Real</option>
+          </select>
+        </label>
+
+        <label>
+          <p>Convert <b>to</b></p>
+          <select id="currency-select">
+            <option>US$ American Dollar</option>
+            <option>€ Euro</option>
+            <option>₿ Bitcoin</option>
+          </select>
+        </label>
+
+        <label>
+          <p>Value</p>
+          <input id="input-real" type="number" placeholder="R$ 0,00" /> </label
+        ><br />
+
+        <button id="convert-button">Convert</button>
+
+        <section>
+          <div class="real-wrap">
+            <img src="./img/brasil.png" alt="brazil-flag" />
+            <p>Brazillian Real</p>
+            <p id="real-value-text" class="values">R$ 0,00</p>
+          </div>
+
+          <img id="arrow" src="./img/arrow.png" alt="down-arrow" />
+
+          <div>
+            <img
+          
+              src="./img/usa.png">
+              <img
+             
+              src="./img/euro.png">
+              <img
+            
+              src="./img/bitcoin.png">
+             
+            
+            <p id="currency-name">American Dollar</p>
+            <p id="currency-value-text" class="values">US$ 0.00</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
